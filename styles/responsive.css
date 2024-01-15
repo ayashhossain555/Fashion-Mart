@@ -1,0 +1,39 @@
+/* Tablet Devices Media Query */
+@media screen and (max-width: 1000px){
+    .grid-container{
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* Mobile Devices Media Query */
+@media screen and (max-width: 700px){
+    .header-container, .item-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .login-button{
+        margin-bottom: 20px;
+    }
+    .nav-container img{
+        width: 60px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .txt-container, .banner-img-container{
+        margin-top: 20px;
+        width: 80%;
+    }
+    .grid-container{
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+}

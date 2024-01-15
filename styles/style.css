@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar ancings */
+.header{
+    background-color: salmon;
+}
+.header-container{
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+}
+.nav-container{
+    /* border: 2px solid red; */
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.nav-container img{
+    width: 90px;
+    object-fit: cover;
+}
+.nav-container p{
+    font-size: 35px;
+    font-weight: 500;
+}
+.nav-container .imp{
+    color: #9376e0;
+    font-size: 35px;
+    font-weight: 700;
+}
+.item-container{
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-container a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #e6e9eb;
+}
+.login-button{
+    padding: 10px 20px;
+    background-color: #9376e0;
+    border-radius: 7px;
+    border: none;
+}
+.login-button a{
+    font-weight: 600;
+    color: white;
+}
+
+/* Banner Styles */
+
+.banner-container{
+    max-width: 1250px;
+    min-height: 400px;
+    margin: 20px auto;
+    display: flex;
+    background-color: #e6e9eb;
+    border-radius: 15px;
+    padding: 20px;
+}
+.txt-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+/* .txt-container h1, p, span{
+    font-size: 45px;
+} */
+.txt-heading{
+    /* background: linear-gradient(45deg, salmon, #9376e0); */
+    /* background-clip: text; */
+    /* color: transparent; */
+    color: #9376e0;
+    font-size: 60px;
+}
+#collection{
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-size: 50px;
+}
+.icons{
+    display: flex;
+    font-size: 45px;
+    /* width: 70%;
+    justify-content: space-around;
+    align-items: center; */
+    gap: 20px;
+}
+.primary-button{
+    padding: 10px 20px;
+    background-color: salmon;
+    border-radius: 7px;
+    border: none;
+    font-weight: 600;
+    color: #e6e9eb;
+}
+
+.banner-img-container{
+    width: 50%;
+    position: relative;
+}
+.banner-img-container img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+    /* padding: 5px; */
+    border-radius: 15px;
+}
+.discount{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    position: absolute;
+    bottom: 70%;
+    left: 69%;
+    border: 2px solid rgb(185, 8, 8);
+}
+.discount p{
+    font-size: 20px;
+}
+
+/* Product Styles */
+
+.product-container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.grid-container{
+    min-height: 400px;
+    /* border: 2px solid red; */
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.single-product{
+    /* border: 2px solid blue; */
+    /* width: 30%; */
+    padding: 15px;
+    background-color: #e6e9eb;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.single-product img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.single-product p{
+    margin-top: 10px;
+}
+.single-product .primary-button{
+    margin-top: 20px;
+}
+.heading-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading-icons .icons{
+    background-color: salmon;
+    color: #e6e9eb;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    padding: 15px;
+}
+
+/* Gallery Styles */
+.gallery{
+    max-width: 1250px;
+    margin: 30px auto;
+    border: 2px solid blue;
+}
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.single-gallery{
+    flex-basis: 300px;
+    border: 2px solid red;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.single-gallery img{
+    width: 70%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
